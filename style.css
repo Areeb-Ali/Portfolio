@@ -6,6 +6,7 @@
     color: #fff;
 }
 
+/* Home Section Started  */
 #header {
     width: 100%;
     height: 100vh;
@@ -24,7 +25,8 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.nameLogo{
+
+.nameLogo {
     width: 140px;
 }
 
@@ -33,6 +35,7 @@ nav ul li {
     list-style: none;
     margin: 10px 20px;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -40,7 +43,7 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -50,17 +53,106 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.4s;
 }
-nav ul li a:hover::after{
-    width: 100% ;
+
+nav ul li a:hover::after {
+    width: 100%;
 }
-.headerText{
+
+.headerText {
     margin-top: 20%;
     font-size: 30px;
 }
+
 .headerText h1 {
     font-size: 60px;
     margin-top: 20px;
 }
-.headerText h1  span {
+
+.headerText h1 span {
     color: #00fffb;
+}
+
+/* Home Section Ended */
+/* About Section Started  */
+#about {
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-cal-1 {
+    flex-basis: 35%;
+}
+
+.about-cal-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-cal-2 {
+    flex-basis: 60%;
+}
+
+.para-aboutme{
+    color: #ababab;
+}
+
+.title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 50px;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #00fffb;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s;
+}
+
+.tab-links.active-linkes::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #00fffb;
+    font-size: 14px;
+}
+
+.tab-contents ul li {
+    color: #ababab;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }

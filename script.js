@@ -1,0 +1,1 @@
+let tabLinks = document.querySelector('.tab-links')
